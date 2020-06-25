@@ -14,12 +14,12 @@ app.get("/",(req,res)=>{
         res.render("home",{
             title:"Home Page"
         })
-})
+});
 
 
 
 
-
-app.listen(3000,()=>{
+const PORT=process.env.PORT || 3000;
+app.listen(PORT,()=>{
     console.log("Web is up");
 })
